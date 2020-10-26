@@ -9,14 +9,14 @@
   <meta name="author" content="Mohammadreza Hajianpour">
   <meta property="og:title" content="Meshki UI"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="meta-image.png"/>
+  <meta property="og:image" content="https://borderliner.github.io/Meshki/meta-image.png"/>
   <meta property="og:url" content="https://borderliner.github.io/Meshki/"/>
   <meta property="og:description" content="Meshki: The most stylish CSS library on planet Earth!"/>
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@Meshki_UI">
   <meta name="twitter:title" content="Meshki UI">
   <meta name="twitter:description" content="Meshki: The most stylish CSS library on planet Earth!">
-  <meta name="twitter:image" content="meta-image.png">
+  <meta name="twitter:image" content="https://borderliner.github.io/Meshki/meta-image.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- DEVELOPMENT FILES
@@ -25,9 +25,9 @@
   <script type="text/javascript" src="../dist/js/meshki.min.js"></script>
   DEVELOPMENT FILES -->
   <!-- PRODUCTION FILES -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/css/meshki.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/plugins/meshki-extra-button-colors.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/js/meshki.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.2.0/css/meshki.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.2.0/plugins/meshki-extra-button-colors.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.2.0/js/meshki.min.js"></script>
   <!-- PRODUCTION FILES -->
   <link rel="stylesheet" type="text/css" href="custom.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -51,14 +51,14 @@
     <a href="https://github.com/Borderliner/Meshki/blob/master/README.md">About Meshki</a>
     <hr class="hide-on-non-mobile">
     <div class="hide-on-non-mobile">
-      <a href="#buttons-doc" onclick="meshki.closeNav()">Buttons</a>
-      <a href="#sidenav-doc" onclick="meshki.closeNav()">Sidenav</a>
-      <a href="#navbar-doc" onclick="meshki.closeNav()">Navbar</a>
-      <a href="#grid-doc" onclick="meshki.closeNav()">Grid System</a>
-      <a href="#form-doc" onclick="meshki.closeNav()">Forms</a>
-      <a href="#typography-doc" onclick="meshki.closeNav()">Typography</a>
-      <a href="#tables-doc" onclick="meshki.closeNav()">Tables</a>
-      <a href="#footer-doc" onclick="meshki.closeNav()">Footer</a>
+      <a href="#buttons-doc" onclick="meshki.closeSidenav()">Buttons</a>
+      <a href="#sidenav-doc" onclick="meshki.closeSidenav()">Sidenav</a>
+      <a href="#navbar-doc" onclick="meshki.closeSidenav()">Navbar</a>
+      <a href="#grid-doc" onclick="meshki.closeSidenav()">Grid System</a>
+      <a href="#form-doc" onclick="meshki.closeSidenav()">Forms</a>
+      <a href="#typography-doc" onclick="meshki.closeSidenav()">Typography</a>
+      <a href="#tables-doc" onclick="meshki.closeSidenav()">Tables</a>
+      <a href="#footer-doc" onclick="meshki.closeSidenav()">Footer</a>
     </div>
     <hr>
     <button onclick="location.href='https://twitter.com/Meshki_UI'" class="button blue medium"><b></b><i class="fa fa-twitter" aria-hidden="true"></i></button>
@@ -112,7 +112,7 @@
 
       <div class="row text-center" style="margin-bottom: 250px;margin-top: 50px;">
         <div class="button-couple">
-          <a class="button red large custom-down-cdn" href="https://github.com/Borderliner/Meshki/archive/v2.0.1.zip">Download (v2.0.1)</a>
+          <a class="button red large custom-down-cdn" href="https://github.com/Borderliner/Meshki/archive/v2.2.0.zip">Download (v2.2.0)</a>
           <a class="button large disabled" disabled>or</a>
           <a class="button cyan large custom-down-cdn" href="javascript:void(0)" onclick="var cdn=document.getElementById('cdn');cdn.style.display=='none'?cdn.style.display='block':cdn.style.display='none';">Use CDN</a>
         </div>
@@ -123,8 +123,8 @@
             title="Copy to clipboard"
             data-clipboard-target="#code-cdn"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
           <code class="language-html" id="code-cdn">
-&lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/css/meshki.min.css">
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/js/meshki.min.js">&lt;/script>
+&lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.2.0/css/meshki.min.css">
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.2.0/js/meshki.min.js">&lt;/script>
           </code>
         </pre>
       </div>
@@ -381,7 +381,7 @@
 &lt;nav class="fixed">
   &lt;ul>
     &lt;!-- Note that javascript:void(0) stops your page from jumping to the top -->
-    &lt;li>&lt;a class="logo" href="javascript:void(0)" onclick="meshki.openNav()">Meshki&lt;/a>&lt;/li>
+    &lt;li>&lt;a class="logo" href="javascript:void(0)" onclick="meshki.openSidenav()">Meshki&lt;/a>&lt;/li>
     &lt;li>&lt;a href="https://github.com/Borderliner/Meshki/releases">News&lt;/a>&lt;/li>
     &lt;li>&lt;a href="https://github.com/Borderliner/Meshki">GitHub&lt;/a>&lt;/li>
 
@@ -542,7 +542,7 @@
       <div class="row">
         <div class="twelve col">
           <label for="dis-email1">Email:</label>
-          <input id="dis-email1" class="expand" type="email" name="dis-email1" value="hajianpour.mr@gmail.com" disabled>
+          <input id="dis-email1" class="expand" type="email" name="dis-email1" value="something@mail.com" disabled>
         </div>
       </div>
       <div class="row">
@@ -980,7 +980,7 @@
             title="Copy to clipboard"
             data-clipboard-target="#code-extra-button-colors"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
             <code class="language-html" id="code-extra-button-colors">
-&lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/plugins/meshki-extra-button-colors.min.css">
+&lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.2.0/plugins/meshki-extra-button-colors.min.css">
             </code>
           </pre>
         </p>
@@ -1043,10 +1043,10 @@
     <div class="footer">
       <div class="row">
         <div class="six col">
-          <p>Created with <i class="fa fa-heart custom-love"></i> by Mohammadreza Hajianpour (<a href="https://github.com/Borderliner">Borderliner</a>)</p>
+          <p>Created with <i class="fa fa-heart custom-love"></i> by Ryan Hajianpour (<a href="https://github.com/Borderliner">Borderliner</a>)</p>
         </div>
         <div class="six col text-center">
-          <p>2016-2017, Licensed under <a href="https://github.com/Borderliner/Meshki/blob/master/LICENSE">Apache-2.0</a></p>
+          <p>2016-2019, Licensed under <a href="https://github.com/Borderliner/Meshki/blob/master/LICENSE">Apache-2.0</a></p>
         </div>
       </div>
     </div>

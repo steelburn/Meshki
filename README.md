@@ -1,3 +1,5 @@
+# Project state: Active. Please report any bugs you encounter so that I can fix them.
+
 # [Meshki](https://borderliner.github.io/Meshki/)
 [![npm](https://img.shields.io/npm/dm/meshki.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/meshki)
 [![GitHub tag](https://img.shields.io/github/tag/borderliner/meshki.svg?maxAge=2592000?style=flat-square)](https://github.com/Borderliner/Meshki/releases)
@@ -27,7 +29,7 @@ Check out <https://borderliner.github.io/Meshki/> for samples and details.
 # Getting Started
 
 There are a couple ways to download Meshki:
-- [Download the zip](https://github.com/Borderliner/Meshki/archive/v2.0.1.zip) or [the tar.gz](https://github.com/Borderliner/Meshki/archive/v2.0.1.tar.gz)
+- [Download the zip](https://github.com/Borderliner/Meshki/archive/v2.2.0.zip) or [the tar.gz](https://github.com/Borderliner/Meshki/archive/v2.2.0.tar.gz)
 - Clone the repo: `git clone https://github.com/Borderliner/Meshki.git` (Note: this is under active development, so if you're looking for stable and safe, use the zipped download)
 - Use Bower: `bower install meshki` **(Recommended)**
 - Use npm: `npm install meshki`
@@ -123,5 +125,5 @@ The website of [Meshki](https://borderliner.github.io/Meshki/) uses:
 
 # Acknowledgement
 
-[Meshki](https://borderliner.github.io/Meshki/) started by [Mohammadreza Hajianpour](mailto:hajianpour.mr@gmail.com) as a fork of [Skeleton](https://github.com/dhg/Skeleton). Although it has changed a lot, and Meshki has experienced a total overhaul
+[Meshki](https://borderliner.github.io/Meshki/) started by [Ryan Hajianpour](mailto:ryan.hajianpour@gmail.com) as a fork of [Skeleton](https://github.com/dhg/Skeleton). Although it has changed a lot, and Meshki has experienced a total overhaul
 Skeleton was created by [Dave Gamache](https://twitter.com/dhg).
